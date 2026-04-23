@@ -1,0 +1,102 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #bfecbe, #e8ffe8);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Soft glowing background effect */
+body::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(76, 175, 80, 0.2);
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  filter: blur(80px);
+  z-index: 0;
+}
+
+/* Card container feel */
+h1, p, button {
+  position: relative;
+  z-index: 1;
+}
+
+/* Smooth page load animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  color: #1f1f1f;
+  font-size: 42px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #333;
+  font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto 25px auto;
+  font-style: italic;
+  padding: 15px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Modern button */
+button {
+  background: linear-gradient(135deg, #4CAF50, #2e7d32);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Hover effect */
+button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Click effect */
+button:active {
+  transform: scale(0.97);
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
