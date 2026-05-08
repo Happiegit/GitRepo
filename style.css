@@ -20,8 +20,8 @@ body::before {
   position: absolute;
   width: 400px;
   height: 400px;
-  background: rgba(76, 175, 80, 0.2);
-  border-radius: 50%;
+  background: rgba(78, 105, 79, 0.2);
+  border-radius: 40%;
   top: -100px;
   left: -100px;
   filter: blur(80px);
@@ -47,7 +47,7 @@ h1, p, button {
 }
 
 h1 {
-  color: #1f1f1f;
+  color: #021606;
   font-size: 42px;
   margin-bottom: 12px;
   letter-spacing: 1px;
@@ -70,9 +70,9 @@ button {
   background: linear-gradient(135deg, #4CAF50, #2e7d32);
   color: white;
   border: none;
-  padding: 14px 28px;
+  padding: 14px 18px;
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
@@ -81,7 +81,7 @@ button {
 /* Hover effect */
 button:hover {
   transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 30px rgba(56, 48, 48, 0.2);
 }
 
 /* Click effect */
@@ -91,7 +91,7 @@ button:active {
 
 /* Scroll reveal animation */
 .reveal {
-  opacity: 0;
+  opacity: 20;
   transform: translateY(40px);
   transition: all 0.8s ease;
 }
